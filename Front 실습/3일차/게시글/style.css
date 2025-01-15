@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body{
-	background-color: gray;
+	background-color: rgb(221, 221, 221);
 }
 form{
 	margin: auto;
@@ -14,11 +14,31 @@ h1{
 fieldset{
 	margin: auto;
 	width: 500px;
-	height: 700px;
 	border-radius: 8px;
-	padding: 8px;
+	padding: 24px 16px;
 	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items:flex-start;
+	box-shadow: 0 0 5px 2px gray;
+	gap: 20px;
 }
-input{
+input, textarea{
 	width: 480px;
+}
+input[name = "title"]{
+	height: 48px;
+}
+[name = "info"]{
+	height: 124px;
+}
+input[name = "name"]{
+	height: 24px;
+}
+button{
+	background-color: rgb(75, 195, 73);
+	padding: 2px 4px;
+	border: 1px solid rgb(46, 139, 44);
+	border-radius: 4px;
 }
