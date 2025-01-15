@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+table{
+	margin: auto;
+	border-spacing: 6px;
+}
+th, td{
+	border: 1px rgb(179, 179, 179) solid;
+	border-collapse: collapse;
+	border-radius: 0.5rem;
+	width: 64px;
+	height: 48px;
+	text-align: center;
+}
+tr:first-child{
+	background-color: rgb(227, 227, 227);
+	font-size: larger;
+	font-weight: 800;
+}
+th:first-child, td:first-child{
+	color: red;
+}
+th:last-child , td:last-child{
+	color: blue;
+}
