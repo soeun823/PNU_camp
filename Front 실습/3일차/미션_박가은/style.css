@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'RiaSans-ExtraBold';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -9,39 +15,66 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-main{
-
-}
 h1{
 	display:inline-block;
 	text-align: center;
 }
 #block{
 	width: 330px;
-	height: 300px;
+	height: 330px;
 	border: 1px solid #000;
 	border-radius: 4%;
-	/* display: flex; */
-	/* flex-wrap:wrap; */
-	/* justify-content: space-around;
-	align-content: space-around; */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	position: relative;
+}
+.long, #short{
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'RiaSans-ExtraBold';
+	font-size: x-large;
+}
+p{
+	display: none;
+}
+.long:hover p, #short:hover p{
+	display: block;
+	cursor: pointer;
 }
 .long:first-child, .long:nth-child(4){
 	width: 190px;
 	height: 90px;
-	background-color: lemonchiffon;
 	margin: 5px;
 }
 .long:nth-child(2), .long:nth-child(3){
 	width: 90px;
 	height: 190px;
-	background-color: lemonchiffon;
 	margin: 5px;
 }
+.long:first-child{
+	background-color: lemonchiffon;
+}
+.long:nth-child(2){
+	background-color:palegreen ;
+}
+.long:nth-child(3){
+	background-color:rgb(190, 158, 255) ;
+	position: absolute;
+	top: 115px;
+	left: 10px;
+}
+.long:nth-child(4){
+	background-color:rgb(159, 204, 255) ;
+	margin-left: 110px;
+}
 #short{
-	margin: 100px;
+	margin: 115px;
 	width: 90px;
 	height: 90px;
 	background-color: lightpink;
-	z-index: 12;
+	position: absolute;
 }
